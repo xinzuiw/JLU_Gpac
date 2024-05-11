@@ -24,7 +24,7 @@
     "content_scripts": [
         {
             "matches": [
-                "<https://iedu.jlu.edu.cn/jwapp/sys/cjcx/*>"
+                "https://iedu.jlu.edu.cn/jwapp/sys/cjcx/*"
             ],
             "js": [
                 "content-script.js"
