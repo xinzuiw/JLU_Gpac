@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup</title>
+  <style>
+    #popupContainer {
+      width: 400px;
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    #popupTable {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    #popupTable th, #popupTable td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    #popupTable th {
+      background-color: #f2f2f2;
+    }
+    #popupContainer::-webkit-scrollbar {
+      width: 5px;
+    }
+    #popupContainer::-webkit-scrollbar-thumb {
+      background-color: #888;
+    }
+    #popupContainer::-webkit-scrollbar-track {
+      background-color: #eee;
+    }
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+    }
+    .checkbox {
+      margin-right: 5px;
+    }
+    #resultContainer {
+      margin-top: 10px;
+    }
+    #calculateBtn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <button id="sendMessageBtn">获取成绩</button>
+  <button id="calculateBtn">计算</button>
+  <button id="compulsoryBtn">必修</button>
+  <button id="electiveBtn">选修</button>
+  <button id="limitedBtn">限选</button>
+
+
+  <div id="popupContainer">
+    <table id="popupTable"></table>
+  </div>
+  <div id="resultContainer"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+    "manifest_version": 3,
+    "name": "绩点计算",
+    "description": "吉大绩点自定义计算，进入教务成绩查询，选择全部成绩，右下角显示100或者200",
+    "version": "1.0",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        },
+        "default_popup": "popup.html"
+    },
+ 
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ]
+}
